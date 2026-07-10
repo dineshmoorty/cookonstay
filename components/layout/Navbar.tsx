@@ -10,7 +10,7 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-gray-200 bg-white/95 backdrop-blur-md">
-      <nav className="relative mx-auto flex h-20 max-w-7xl items-center justify-between px-6 py-4">
+      <nav className="relative mx-auto flex h-20 w-full max-w-[80rem] items-center justify-between px-6 py-4 sm:px-8">
         <Link href="/" className="flex items-center gap-3">
           <Image
             src="/logo/logo.png"
