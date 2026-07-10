@@ -32,7 +32,7 @@ export default function Footer() {
       <div aria-hidden="true" className="absolute -left-28 -top-28 -z-10 h-80 w-80 rounded-full bg-orange-400/10 blur-3xl" />
       <div aria-hidden="true" className="absolute -bottom-32 -right-24 -z-10 h-96 w-96 rounded-full bg-green-400/10 blur-3xl" />
 
-      <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+      <div className="mx-auto max-w-full px-6 py-20 lg:px-8">
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-12 lg:gap-16" style={{ padding: '15px' }}>
 
           {/* Company Info */}
