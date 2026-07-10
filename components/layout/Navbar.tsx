@@ -45,9 +45,6 @@ export default function Navbar() {
           aria-expanded={isOpen}
           aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
         >
-          <span className="sr-only">
-            {isOpen ? "Close navigation menu" : "Open navigation menu"}
-          </span>
           <span
             className={`block h-0.5 w-5 bg-current transition-transform duration-300 ${isOpen ? "translate-y-1.5 rotate-45" : "-translate-y-1.5"}`}
           />
@@ -61,25 +58,15 @@ export default function Navbar() {
 
         {isOpen && (
           <div className="absolute inset-x-0 top-full z-40 overflow-hidden rounded-b-3xl border border-gray-200 bg-white/95 shadow-2xl shadow-gray-900/10 backdrop-blur-xl md:hidden">
-            <div className="flex items-center justify-between gap-3 border-b border-gray-200 px-6 py-4">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-500">
-                Menu
-              </p>
-              <button
-                type="button"
-                className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-gray-50 px-3 py-2 text-sm font-medium text-gray-700 transition hover:bg-orange-50 hover:text-orange-600"
-                onClick={() => setIsOpen(false)}
-              >
-                Close
-              </button>
-            </div>
-
-            <ul className="flex flex-col gap-4 px-6 py-6">
+            <ul className="flex flex-col gap-6 px-6 py-6">
               {NAV_LINKS.map((item) => (
-                <li key={item.href}>
+                <li
+                  key={item.href}
+                  className="border-b border-gray-200 last:border-b-0 last:pb-0"
+                >
                   <Link
                     href={item.href}
-                    className="block rounded-2xl px-4 py-3 text-base font-medium text-gray-700 transition hover:bg-orange-50 hover:text-orange-600"
+                    className="block rounded-2xl text-base font-medium text-gray-700 transition hover:bg-orange-50 hover:text-orange-600"
                     onClick={() => setIsOpen(false)}
                   >
                     {item.name}
