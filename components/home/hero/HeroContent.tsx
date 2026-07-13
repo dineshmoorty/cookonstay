@@ -6,8 +6,8 @@ const promises = ["Made fresh daily", "Carefully prepared", "Comfort in every bi
 
 export default function HeroContent() {
   return (
-    <div className="relative z-10 mx-auto max-w-[38rem] text-center lg:mx-0 lg:text-left">
-      <span className="inline-flex items-center rounded-full border border-orange-200/80 bg-orange-50 px-3.5 py-1.5 text-xs font-semibold tracking-[0.12em] text-orange-700 uppercase shadow-sm shadow-orange-950/[0.03]">
+    <div className="relative z-10 mx-auto  text-center lg:mx-0 lg:text-left">
+      <span className="inline-flex items-center rounded-full border border-orange-200/80 bg-orange-50 px-3.5 py-1.5 text-xs font-semibold tracking-[0.12em] text-orange-700 uppercase shadow-sm shadow-orange-950/[0.03]" style={{  padding: "7px"}}>
         Fresh South Indian food
       </span>
 
@@ -16,7 +16,7 @@ export default function HeroContent() {
         <span className="block text-green-700">Served like home.</span>
       </h1>
 
-      <p className="mx-auto mt-6 max-w-lg text-base leading-7 text-gray-600 sm:text-lg sm:leading-8 lg:mx-0">
+      <p className="mt-6 max-w-full text-base leading-7 text-gray-600 sm:text-lg sm:leading-8 lg:mx-0" style={{  paddingTop: "7px" , paddingBottom: "7px"}}>
         Authentic South Indian breakfasts and wholesome meals, prepared fresh
         each day with honest ingredients and recipes that feel familiar.
       </p>
