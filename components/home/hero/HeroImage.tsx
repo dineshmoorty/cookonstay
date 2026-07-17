@@ -7,7 +7,7 @@ export default function HeroImage() {
       <div aria-hidden="true" className="absolute -inset-5 -z-10 rounded-[2.5rem] bg-gradient-to-br from-orange-200/60 via-transparent to-green-200/60 blur-2xl" />
       <div className="relative overflow-hidden rounded-[2rem] border border-white/80 bg-green-950 shadow-[0_24px_60px_-22px_rgba(31,41,55,0.35)] sm:rounded-[2.5rem]">
         <Image
-          src="/images/hero_image.png"
+          src="/images/hero_img.png"
           alt="Fresh idli served on a banana leaf with chutney and sambar"
           width={1200}
           height={1050}
