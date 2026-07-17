@@ -33,7 +33,7 @@ export default function MenuCard({ item }: { item: MenuItem }) {
           {item.price}
         </p>
 
-        <button className="mt-6 w-full rounded-xl bg-orange-500 py-3 font-semibold text-white transition hover:bg-orange-600">
+        <button className="mt-6 w-full rounded-xl bg-orange-500 py-3 font-semibold text-white transition hover:bg-orange-600" style={{padding: "10px"}}>
           Order Now
         </button>
       </div>
