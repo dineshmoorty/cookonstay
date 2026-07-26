@@ -14,8 +14,8 @@ export const BUSINESS = {
 
   msme: "UDYAM-TN-12-0051633",
   fssai: "22422577000137",
-  linkedin: "https://www.linkedin.com/company/cookonstay/",
-  instagram: "https://www.instagram.com/cookonstay/",
-  facebook: "https://www.facebook.com/cookonstay",
+  linkedin: "https://www.linkedin.com/company/cookonstay",
+  instagram: "https://www.instagram.com/cookonstay_madurai/",
+  facebook: "https://www.facebook.com/profile.php?id=61589350733795",
   whatsapp: "https://wa.me/919488270932",
 };
