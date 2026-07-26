@@ -4,7 +4,7 @@ export default function AboutContent() {
   return (
     <div>
 
-      <span className="rounded-full bg-green-100 px-4 py-2 text-sm font-semibold text-green-700" style={{ backgroundColor: "#D1FAE5", color: "#065F46" , padding: "5px 10px", borderRadius: "9999px", fontSize: "0.875rem", fontWeight: "600" }} >
+      <span className="rounded-full bg-orange-100 px-4 py-2 text-sm font-semibold text-orange-600" style={{  padding: "5px 10px", borderRadius: "9999px", fontSize: "0.875rem", fontWeight: "600" }} >
          About CookOnStay
       </span>
 

@@ -3,7 +3,7 @@ import MenuCard from "./MenuCard";
 
 export default function MenuGrid() {
   return (
-    <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+    <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4" style={{padding: "20px"}}>
       {FEATURED_MENU.map((item) => (
         <MenuCard key={item.id} item={item} />
       ))}

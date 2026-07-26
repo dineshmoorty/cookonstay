@@ -2,7 +2,7 @@ export const FEATURED_MENU = [
   {
     id: 1,
     name: "Idli",
-    price: "₹8",
+    price: "₹10",
     image: "/images/menu/idli.png",
     badge: "Best Seller",
   },
