@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { LucideIcon } from "lucide-react";
 
 type Feature = {
@@ -9,13 +12,22 @@ type Feature = {
 
 export default function FeatureCard({
   feature,
+  index,
 }: {
   feature: Feature;
+  index: number;
 }) {
   const Icon = feature.icon;
 
   return (
-    <div className="group rounded-3xl border border-gray-200 bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-orange-500 hover:shadow-xl" style={{"padding": "20px"}}>
+    <motion.div
+      initial={{ opacity: 0, y: 28 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.25 }}
+      transition={{ duration: 0.45, delay: index * 0.1, ease: "easeOut" }}
+      className="group rounded-3xl border border-gray-200 bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-orange-500 hover:shadow-xl"
+      style={{ padding: "20px" }}
+    >
       <div className="mb-6 inline-flex rounded-2xl bg-orange-100 p-4 text-orange-600 transition-transform duration-300 group-hover:scale-110" style={{"padding": "10px"}}>
         <Icon className="h-8 w-8" />
       </div>
@@ -27,6 +39,6 @@ export default function FeatureCard({
       <p className="leading-7 text-gray-600">
         {feature.description}
       </p>
-    </div>
+    </motion.div>
   );
 }

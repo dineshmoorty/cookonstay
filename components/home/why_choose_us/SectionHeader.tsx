@@ -1,6 +1,17 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 export default function SectionHeader() {
   return (
-    <div className="mx-auto mb-16 max-w-full text-center" style={{"paddingTop": "20px"}}>
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.4 }}
+      transition={{ duration: 0.45, ease: "easeOut" }}
+      className="mx-auto mb-16 max-w-full text-center"
+      style={{ paddingTop: "20px" }}
+    >
       <span className="rounded-full bg-orange-100 px-4 py-2 text-sm font-semibold text-orange-600" style={{"padding": "10px"}}>
         ⭐ Why Choose CookOnStay
       </span>
@@ -17,6 +28,6 @@ export default function SectionHeader() {
         with care to deliver the authentic taste of South India at prices
         everyone can enjoy.
       </p>
-    </div>
+    </motion.div>
   );
 }
