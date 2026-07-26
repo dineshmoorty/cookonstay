@@ -14,7 +14,7 @@ export default function HomePage() {
       <WhyChooseUs />
       <Gallery />
       <Testimonials />
-      <ContactCTA />
+      {/* <ContactCTA /> */}
       <About />
     </>
   );
