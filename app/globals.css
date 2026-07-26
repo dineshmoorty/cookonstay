@@ -1,3 +1,6 @@
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
 @import "tailwindcss";
 
 :root {
@@ -57,6 +60,25 @@ button,
 input,
 textarea {
   font: inherit;
+}
+
+.gallery-swiper,
+.testimonials-swiper {
+  --swiper-theme-color: var(--primary);
+  --swiper-navigation-size: 24px;
+  padding-inline: 2.5rem;
+}
+
+.gallery-swiper .swiper-button-next,
+.gallery-swiper .swiper-button-prev,
+.testimonials-swiper .swiper-button-next,
+.testimonials-swiper .swiper-button-prev {
+  color: var(--primary);
+}
+
+.gallery-swiper .swiper-pagination,
+.testimonials-swiper .swiper-pagination {
+  bottom: 0;
 }
 
 @keyframes hero-float {

@@ -27,7 +27,7 @@ export default function TestimonialCard({
       </div>
 
       <p className="leading-7 text-gray-600" style={{"padding": "10px 0"}}>
-        "{testimonial.review}"
+        &ldquo;{testimonial.review}&rdquo;
       </p>
 
       <div className="mt-6 border-t pt-4" style={{"padding": "10px 0"}}>
