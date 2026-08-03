@@ -98,7 +98,7 @@ export default function BulkOrdersSection() {
               text-slate-400
             "
           >
-            Whether it's a school function, birthday,
+            Whether it&apos;s a school function, birthday,
             baby shower or seasonal celebration,
             CookOnStay prepares fresh South Indian food
             with the same homemade care.
@@ -218,7 +218,7 @@ export default function BulkOrdersSection() {
             "
           >
             Tell us your date, number of people and preferred menu.
-            We'll help you plan a delicious homemade South Indian meal.
+            We&apos;ll help you plan a delicious homemade South Indian meal.
           </p>
 
           <a

@@ -41,56 +41,56 @@ const categories = [
 const galleryItems = [
   {
     id: 1,
-    src: "/images/gallery/collection/idli.png",
+    src: "/images/gallery/collection/idli.webp",
     title: "Soft Idlis",
     category: "food",
     size: "large",
   },
   {
     id: 2,
-    src: "/images/gallery/collection/pongal.png",
+    src: "/images/gallery/collection/pongal.webp",
     title: "Ven Pongal",
     category: "food",
     size: "normal",
   },
   {
     id: 3,
-    src: "/images/gallery/collection/stall.png",
+    src: "/images/gallery/collection/stall.webp",
     title: "Our Madurai Stall",
     category: "stall",
     size: "tall",
   },
   {
     id: 4,
-    src: "/images/gallery/collection/variety-rice.png",
+    src: "/images/gallery/collection/variety-rice.webp",
     title: "Traditional Variety Rice",
     category: "food",
     size: "normal",
   },
   {
     id: 5,
-    src: "/images/gallery/collection/400-idlis.png",
+    src: "/images/gallery/collection/400-idlis.webp",
     title: "400 Idli Order",
     category: "bulk",
     size: "large",
   },
   {
     id: 6,
-    src: "/images/gallery/collection/birthday-order.png",
+    src: "/images/gallery/collection/birthday-order.webp",
     title: "Birthday Order",
     category: "celebrations",
     size: "normal",
   },
   {
     id: 7,
-    src: "/images/gallery/collection/baby-shower.png",
+    src: "/images/gallery/collection/baby-shower.webp",
     title: "Baby Shower Order",
     category: "celebrations",
     size: "normal",
   },
   {
     id: 8,
-    src: "/images/gallery/collection/purattasi.png",
+    src: "/images/gallery/collection/purattasi.webp",
     title: "Purattasi Special",
     category: "bulk",
     size: "tall",
@@ -314,6 +314,11 @@ function GalleryCard({
         src={item.src}
         alt={item.title}
         fill
+        sizes={
+          item.size === "large"
+            ? "(min-width: 1024px) 66vw, (min-width: 640px) 100vw, 100vw"
+            : "(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+        }
         className="
           object-cover
           transition-transform

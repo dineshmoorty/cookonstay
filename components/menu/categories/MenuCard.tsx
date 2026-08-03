@@ -33,6 +33,7 @@ export default function MenuCard({
           src={item.image}
           alt={item.name}
           fill
+          sizes="(min-width: 1280px) 25vw, (min-width: 640px) 50vw, 100vw"
           className="
             object-cover
             transition-transform

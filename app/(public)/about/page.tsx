@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import DifferenceSection from "@/components/about/difference/DifferenceSection";
 import JourneySection from "@/components/about/journey/JourneySection";
 import AboutHero from "@/components/about/hero/AboutHero";
@@ -6,9 +7,16 @@ import OurStory from "@/components/about/story/OurStory";
 import PromiseSection from "@/components/about/promise/PromiseSection";
 import VisitSection from "@/components/about/visit/VisitSection";
 
+export const metadata: Metadata = {
+  title: "About Our Homemade South Indian Food",
+  description:
+    "Learn how CookOnStay brings familiar, homemade South Indian food to Madurai with care, quality, and local flavour.",
+  alternates: { canonical: "/about" },
+};
+
 export default function AboutPage() {
   return (
-    <main>
+    <>
       <AboutHero />
       <OurStory />
       <PurposeSection />
@@ -16,6 +24,6 @@ export default function AboutPage() {
       <JourneySection />
       <PromiseSection />
       <VisitSection />
-    </main>
+    </>
   );
 }

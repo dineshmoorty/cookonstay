@@ -16,6 +16,7 @@ export default function MenuCard({ item }: { item: MenuItem }) {
           src={item.image}
           alt={item.name}
           fill
+          sizes="(min-width: 1280px) 25vw, (min-width: 768px) 33vw, 100vw"
           className="object-cover transition-transform duration-300 hover:scale-105"
         />
       </div>

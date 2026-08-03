@@ -28,7 +28,7 @@ export default function Navbar() {
               className="h-11 w-11 sm:h-[55px] sm:w-[55px]"
             />
             <div>
-              <h1 className="text-lg font-bold text-green-700 sm:text-xl">CookOnStay</h1>
+              <p className="text-lg font-bold text-green-700 sm:text-xl">CookOnStay</p>
               <p className="text-[11px] text-gray-500 sm:text-xs">It Feels Like Home</p>
             </div>
           </Link>

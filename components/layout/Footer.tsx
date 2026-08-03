@@ -10,13 +10,6 @@ import Googlemap from "@/components/common/Googlemap";
 
 import { BUSINESS } from "@/constants/business";
 
-const quickLinks = [
-  { label: "Home", href: "/" },
-  { label: "Menu", href: "/menu" },
-  { label: "About", href: "/about" },
-  { label: "Contact", href: "/contact" },
-];
-
 const socialLinks = [
   {
     label: "Instagram",

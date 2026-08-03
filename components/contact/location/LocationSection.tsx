@@ -76,7 +76,7 @@ export default function LocationSection() {
             </span>
 
             <h2 className="mt-6 text-4xl font-bold text-slate-900" style={{marginTop: "10px"}}>
-              We'd Love
+              We&apos;d Love
               <span className="block text-orange-500">
                 to Welcome You.
               </span>

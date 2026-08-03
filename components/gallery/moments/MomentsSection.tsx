@@ -13,7 +13,7 @@ const moments = [
     title: "Prepared for Bigger Moments",
     description:
       "From a few plates to larger food requirements, we prepare every order with the same attention to freshness, consistency and care.",
-    image: "/images/gallery/moments/bulk-order.png",
+    image: "/images/gallery/moments/bulk-order.webp",
   },
   {
     icon: Heart,
@@ -21,7 +21,7 @@ const moments = [
     title: "Food for Special Occasions",
     description:
       "Birthdays, baby showers and family gatherings become even more memorable with familiar South Indian food shared together.",
-    image: "/images/gallery/moments/celebration.png",
+    image: "/images/gallery/moments/celebration.webp",
   },
   {
     icon: CalendarDays,
@@ -29,7 +29,7 @@ const moments = [
     title: "Purattasi, Every Year",
     description:
       "Purattasi is a recurring part of our journey, with traditional vegetarian food orders returning each year during the special month.",
-    image: "/images/gallery/moments/purattasi.png",
+    image: "/images/gallery/moments/purattasi.webp",
   },
 ];
 

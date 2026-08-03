@@ -28,7 +28,7 @@ export default function AboutHeroImage() {
       >
         <div className="relative h-[420px] overflow-hidden rounded-[26px] sm:h-[500px]">
           <Image
-            src="/images/about/about-hero.png"
+            src="/images/about/about-hero.webp"
             alt="CookOnStay"
             fill
             priority

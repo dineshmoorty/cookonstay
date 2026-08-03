@@ -1,9 +1,6 @@
-import Link from "next/link";
 import Image from "next/image";
 import {
   ArrowRight,
-  Clock3,
-  MapPin,
   Phone,
   MessageCircle,
 } from "lucide-react";
@@ -98,7 +95,7 @@ export default function ContactHero() {
               sm:text-5xl
             "
           >
-            Let's Talk About
+            Let&apos;s Talk About
             <span className="block text-orange-500">
               Your Next Meal.
             </span>
@@ -115,8 +112,8 @@ export default function ContactHero() {
             "
             style={{ padding: "5px 10px" }}
           >
-            Whether you're planning dinner, a family gathering,
-            or a bulk order, we're here to help.
+            Whether you&apos;re planning dinner, a family gathering,
+            or a bulk order, we&apos;re here to help.
             Reach out through WhatsApp, phone,
             or visit us in Madurai.
           </p>
@@ -204,7 +201,7 @@ export default function ContactHero() {
             "
           >
             <Image
-              src="/images/contact/contact-hero.png"
+              src="/images/contact/contact-hero.webp"
               alt="CookOnStay Contact"
               width={700}
               height={700}
@@ -264,39 +261,5 @@ export default function ContactHero() {
         </div>
       </div>
     </section>
-  );
-}
-
-function InfoChip({
-  icon,
-  text,
-}: {
-  icon: React.ReactNode;
-  text: string;
-}) {
-  return (
-    <div
-      className="
-        inline-flex
-        items-center
-        gap-2
-        rounded-full
-        border
-        border-orange-100
-        bg-white
-        px-4
-        py-2
-        text-sm
-        font-medium
-        text-slate-700
-        shadow-sm
-      "
-    >
-      <span className="text-orange-500">
-        {icon}
-      </span>
-
-      {text}
-    </div>
   );
 }

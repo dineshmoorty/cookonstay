@@ -1,4 +1,3 @@
-import Reveal from "@/components/animations/Reveal";
 import HeroContent from "./HeroContent";
 import HeroImage from "./HeroImage";
 

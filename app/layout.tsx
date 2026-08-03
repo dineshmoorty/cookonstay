@@ -4,6 +4,8 @@ import "./globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 import { cn } from "@/lib/utils";
+import { BUSINESS } from "@/constants/business";
+import { SITE_URL, siteUrl } from "@/lib/site";
 
 const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
@@ -19,6 +21,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
+  metadataBase: siteUrl,
   title: {
     default: "CookOnStay | Homemade South Indian Food in Madurai",
     template: "%s | CookOnStay",
@@ -65,9 +68,9 @@ export const metadata: Metadata = {
       "Fresh, hygienic homemade South Indian meals in Madurai, prepared with care and priced for everyone.",
     images: [
       {
-        url: "/images/hero_banner.png",
-        width: 1200,
-        height: 630,
+        url: "/images/hero_banner.webp",
+        width: 1254,
+        height: 1151,
         alt: "Fresh homemade South Indian food from CookOnStay",
       },
     ],
@@ -77,7 +80,7 @@ export const metadata: Metadata = {
     title: "CookOnStay | Homemade South Indian Food in Madurai",
     description:
       "Fresh, hygienic homemade South Indian meals in Madurai, prepared with care and priced for everyone.",
-    images: ["/images/hero_banner.png"],
+    images: ["/images/hero_banner.webp"],
   },
   icons: {
     icon: "/icons/icon.png",
@@ -90,9 +93,35 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "FoodEstablishment",
+    name: BUSINESS.name,
+    description: BUSINESS.description,
+    url: SITE_URL,
+    telephone: BUSINESS.phone,
+    email: BUSINESS.email,
+    priceRange: "₹₹",
+    servesCuisine: "South Indian",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "106A, Panthadi 9th Street, Thavittusandhai",
+      addressLocality: "Madurai",
+      postalCode: "625001",
+      addressCountry: "IN",
+    },
+    openingHours: "Mo-Sa 19:00-22:00",
+    hasMap: BUSINESS.mapUrl,
+    sameAs: [BUSINESS.instagram, BUSINESS.facebook, BUSINESS.linkedin],
+  };
+
   return (
     <html lang="en" className={cn("font-sans", geist.variable)}>
       <body className={`${inter.variable} ${poppins.variable}`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
         {children}
         <Analytics />
         <SpeedInsights />

@@ -4,7 +4,7 @@ export const MOODS = [
     emoji: "😌",
     mood: "Relaxed Morning",
     dish: "Ven Pongal",
-    image: "/images/menu/venpongal.png",
+    image: "/images/menu/venpongal.webp",
 
     story:
       "A comforting South Indian breakfast made with rice, moong dal, black pepper, cumin, curry leaves and ghee. Soft, aromatic and traditionally served hot with coconut chutney and sambar.",
@@ -64,7 +64,7 @@ export const MOODS = [
     emoji: "🔥",
     mood: "Craving Bold Flavors",
     dish: "Tomato Rice",
-    image: "/images/menu/Tomato_rice.png",
+    image: "/images/menu/Tomato_rice.webp",
 
     story:
       "Rich tomato rice cooked with ripe tomatoes, onions and aromatic South Indian spices. A flavorful meal loved for its vibrant taste.",
@@ -122,7 +122,7 @@ export const MOODS = [
     emoji: "🏡",
     mood: "Authentic South Indian",
     dish: "Tamarind Rice",
-    image: "/images/menu/tamarind_rice.png",
+    image: "/images/menu/tamarind_rice.webp",
 
     story:
       "Traditional tamarind rice prepared with sesame oil, roasted peanuts and authentic spices. A timeless recipe enjoyed across South India.",

@@ -7,7 +7,7 @@ export default function HeroImage() {
       <div className="absolute h-80 w-80 rounded-full bg-orange-200 blur-3xl opacity-40" />
 
       <Image
-        src="/images/menu/menu-hero.png"
+        src="/images/menu/menu-hero.webp"
         alt="CookOnStay Menu"
         width={650}
         height={650}

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BUSINESS } from "@/constants/business";
 import {
   Phone,
   Mail,
@@ -36,7 +37,7 @@ const contacts = [
     title: "Visit Us",
     subtitle: "Get directions",
     value: "Madurai",
-    href: "https://maps.google.com",
+    href: BUSINESS.mapUrl,
     icon: MapPin,
     color: "bg-red-500",
   },
@@ -100,7 +101,7 @@ export default function ContactMethods() {
           >
             Whether you have a question, want to place
             an order or need catering for an event,
-            we're only one message away.
+            we&apos;re only one message away.
           </p>
 
         </div>

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Camera, Images } from "lucide-react";
+import { Camera } from "lucide-react";
 
 export default function GalleryHero() {
   return (
@@ -139,7 +139,7 @@ export default function GalleryHero() {
             "
           >
             <Image
-              src="/images/gallery/hero-main.png"
+              src="/images/gallery/hero-main.webp"
               alt="CookOnStay South Indian food"
               fill
               priority
@@ -178,21 +178,21 @@ export default function GalleryHero() {
           {/* Image 2 */}
 
           <GalleryImage
-            src="/images/gallery/hero-2.png"
+            src="/images/gallery/hero-2.webp"
             alt="CookOnStay food"
           />
 
           {/* Image 3 */}
 
           <GalleryImage
-            src="/images/gallery/hero-3.png"
+            src="/images/gallery/hero-3.webp"
             alt="CookOnStay meal"
           />
 
           {/* Image 4 */}
 
           <GalleryImage
-            src="/images/gallery/hero-4.png"
+            src="/images/gallery/hero-4.webp"
             alt="CookOnStay event"
           />
 
@@ -208,7 +208,7 @@ export default function GalleryHero() {
             "
           >
             <Image
-              src="/images/gallery/last.png"
+              src="/images/gallery/last.webp"
               alt="Every Plate Has a Story - CookOnStay"
               fill
               className="

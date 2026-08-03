@@ -34,7 +34,7 @@ export default function OurStory() {
               <div className="relative h-[420px] overflow-hidden rounded-[26px] sm:h-[520px]">
 
                 <Image
-                  src="/images/about/hero_banner.png"
+                  src="/images/about/hero_banner.webp"
                   alt="CookOnStay street food stall in Madurai"
                   fill
                   className="object-cover"

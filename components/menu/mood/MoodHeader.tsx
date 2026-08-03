@@ -13,7 +13,7 @@ export default function MoodHeader() {
       <p className="mt-6 text-lg leading-8 text-gray-600" style={{margin: "1rem", fontSize: "1.125rem", lineHeight: "1.75rem", color: "#4b5563"}}>
         Every traditional South Indian dish has its own unique character.
         Explore our menu and discover the meal that matches your mood and
-        today's craving.
+        today&apos;s craving.
       </p>
 
     </div>
