@@ -49,7 +49,7 @@ const cateringMenu = [
   },
   {
     name: "Mushroom Biryani",
-    price: 1300,
+    price: 1400,
     quantity: "",
     serves: "10 persons",
     image: "/images/catering/mushroom_biryani.png",
