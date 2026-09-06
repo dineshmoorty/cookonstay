@@ -31,7 +31,7 @@ const menuSections = [
         name: "Uthappam",
         quantity: "1 pc",
         price: 30,
-        image: "/images/menu/uthappam.png",
+        image: "/images/menu/Uthappam.png",
       },
       {
         name: "Dosai",
@@ -54,7 +54,7 @@ const menuSections = [
       {
         name: "Mini Tiffen",
         quantity: "",
-        price: 30,
+        price: 60,
         image: "/images/menu/mini_tiffen.png",
       },
     ],
