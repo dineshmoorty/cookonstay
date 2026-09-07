@@ -1,13 +1,33 @@
 import type { MetadataRoute } from "next";
-import { SITE_URL } from "@/lib/site";
 
-const routes = ["", "/about", "/menu", "/gallery", "/contact"];
+const baseUrl = "https://cookonstay.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return routes.map((route, index) => ({
-    url: `${SITE_URL}${route}`,
-    lastModified: new Date(),
-    changeFrequency: "weekly",
-    priority: index === 0 ? 1 : 0.8,
-  }));
+  return [
+    {
+      url: baseUrl,
+      changeFrequency: "weekly",
+      priority: 1,
+    },
+    {
+      url: `${baseUrl}/menu`,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/catering`,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/about`,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/enquiry`,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+  ];
 }

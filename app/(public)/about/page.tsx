@@ -1,3 +1,14 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About CookOnStay",
+  description:
+    "Learn about CookOnStay, our approach to food and service, and our everyday food and catering solutions.",
+  alternates: {
+    canonical: "/about",
+  },
+};
+
 const values = [
   {
     number: "01",

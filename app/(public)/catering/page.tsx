@@ -1,3 +1,14 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Catering",
+  description:
+    "Explore CookOnStay catering packages for gatherings, functions, colleges, workplaces and group food requirements.",
+  alternates: {
+    canonical: "/catering",
+  },
+};
+
 const cateringMenu = [
   {
     name: "Ven Pongal",

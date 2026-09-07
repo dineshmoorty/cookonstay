@@ -1,3 +1,14 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Menu",
+  description:
+    "Explore the CookOnStay menu featuring breakfast, lunch, dinner, snacks and beverages.",
+  alternates: {
+    canonical: "/menu",
+  },
+};
+
 const menuSections = [
   {
     title: "Breakfast & Dinner",
