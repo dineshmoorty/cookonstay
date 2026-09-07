@@ -24,7 +24,7 @@ export default function EnquiryPage() {
     setError("");
 
     try {
-      const response = await fetch("https://formspree.io/f/xjvvakqr", {
+      const response = await fetch("https://formspree.io/f/xjyvakqr", {
         method: "POST",
         body: new FormData(form),
         headers: {
