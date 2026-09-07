@@ -13,10 +13,36 @@ const enquiryTypes = [
 
 export default function EnquiryPage() {
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState("");
 
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    setSubmitted(true);
+
+    const form = event.currentTarget;
+    setIsSubmitting(true);
+    setError("");
+
+    try {
+      const response = await fetch("https://formspree.io/f/xjvvakqr", {
+        method: "POST",
+        body: new FormData(form),
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error("Form submission failed");
+      }
+
+      form.reset();
+      setSubmitted(true);
+    } catch {
+      setError("Something went wrong while sending your enquiry. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   return (
@@ -294,10 +320,20 @@ export default function EnquiryPage() {
                   {/* SUBMIT */}
                   <button
                     type="submit"
-                    className="w-full rounded-xl bg-[#f28c28] px-6 py-4 text-sm font-bold text-white transition hover:bg-[#d97416] active:scale-[0.99]"
+                    disabled={isSubmitting}
+                    className="w-full rounded-xl bg-[#f28c28] px-6 py-4 text-sm font-bold text-white transition hover:bg-[#d97416] active:scale-[0.99] disabled:cursor-not-allowed disabled:opacity-70"
                   >
-                    Send Enquiry
+                    {isSubmitting ? "Sending Enquiry..." : "Send Enquiry"}
                   </button>
+
+                  {error && (
+                    <p
+                      role="alert"
+                      className="rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-center text-sm font-medium text-red-700"
+                    >
+                      {error}
+                    </p>
+                  )}
 
                   <p className="text-center text-xs leading-5 text-[#9aa39d]">
                     We&apos;ll use the information you provide only to

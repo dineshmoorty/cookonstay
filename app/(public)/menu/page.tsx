@@ -112,6 +112,12 @@ const menuSections = [
         price: 40,
         image: "/images/menu/tamarind-rice.png",
       },
+      {
+        name: "Malli Rice",
+        quantity: "",
+        price: 40,
+        image: "/images/menu/malli-rice.png",
+      }
     ],
   },
 
@@ -167,6 +173,24 @@ const menuSections = [
         price: 10,
         image: "/images/menu/vada.png",
       },
+      {
+        name: "Samosa",
+        quantity: "1 pc",
+        price: 15,
+        image: "/images/menu/samosa.png",
+      },
+      {
+        name: "Soya Fry",
+        quantity: "",
+        price: 30,
+        image: "/images/menu/soya-fry.png",
+      },
+      {
+        name: "Cauliflower Fry",
+        quantity: "",
+        price: 30,
+        image: "/images/menu/cauliflower-fry.png",
+      }
     ],
   },
 ];
@@ -174,8 +198,6 @@ const menuSections = [
 export default function MenuPage() {
   return (
     <main className="w-full bg-[#f8f7f2]">
-
-
 
 
       {/* =====================================================
