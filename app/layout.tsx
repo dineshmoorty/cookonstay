@@ -44,7 +44,7 @@ export const metadata: Metadata = {
       "Everyday food, catering and practical food solutions for colleges, workplaces, events and group requirements.",
     images: [
       {
-        url: "/images/og-image.png",
+        url: "/images/og-image.webp",
         width: 1200,
         height: 630,
         alt: "CookOnStay - Food & Catering",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     title: "CookOnStay | Food & Catering",
     description:
       "Everyday food, catering and practical food solutions by CookOnStay.",
-    images: ["/images/og-image.png"],
+    images: ["/images/og-image.webp"],
   },
 
   robots: {

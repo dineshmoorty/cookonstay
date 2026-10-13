@@ -26,7 +26,17 @@ export default function BrandStory() {
               Our Journey
             </span>
 
-            <div className="mt-10">
+            {/* CookOnStay Stall Image */}
+            <div className="mt-6 overflow-hidden rounded-2xl border border-white/10">
+              <img
+                src="/images/cookonstay-stall.webp"
+                alt="CookOnStay street-food stall in Madurai"
+                className="h-auto w-full object-cover object-center sm:h-64 md:h-75 lg:h-100 lg:w-full"
+                loading="lazy"
+              />
+            </div>
+
+            <div className="mt-8">
               <div className="text-7xl font-black tracking-[-0.07em] text-white sm:text-8xl">
                 2022
               </div>

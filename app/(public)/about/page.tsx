@@ -112,7 +112,7 @@ export default function AboutPage() {
           <div className="relative min-h-[420px] overflow-hidden lg:min-h-full">
 
             <img
-              src="/images/about/about-hero.png"
+              src="/images/about/about-hero.webp"
               alt="CookOnStay"
               className="absolute inset-0 h-full w-full object-cover"
             />
@@ -148,7 +148,7 @@ export default function AboutPage() {
           <div className="relative min-h-[480px] overflow-hidden">
 
             <img
-              src="/images/about/our-story.png"
+              src="/images/about/our-story.webp"
               alt="CookOnStay food service"
               className="absolute inset-0 h-full w-full object-cover"
             />
@@ -389,7 +389,7 @@ export default function AboutPage() {
           <div className="relative min-h-[420px] overflow-hidden">
 
             <img
-              src="/images/about/our-approach.png"
+              src="/images/about/our-approach.webp"
               alt="CookOnStay service"
               className="absolute inset-0 h-full w-full object-cover"
             />

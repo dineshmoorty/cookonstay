@@ -12,10 +12,10 @@ export const metadata: Metadata = {
 const cateringMenu = [
   {
     name: "Ven Pongal",
-    price: 1100,
+    price: 1200,
     quantity: "1 Padi",
     serves: "10 persons",
-    image: "/images/catering/ven_pongal.png",
+    image: "/images/catering/ven-pongal.webp",
     includes: [
       "Chutney",
       "Brinjal Chutney",
@@ -25,10 +25,10 @@ const cateringMenu = [
   },
   {
     name: "Tomato Rice",
-    price: 1200,
+    price: 1300,
     quantity: "1 Padi",
     serves: "10 persons",
-    image: "/images/catering/tomato-rice.png",
+    image: "/images/catering/tomato-rice.webp",
     includes: [
       "Chutney",
       "Veg Kuruma",
@@ -38,10 +38,10 @@ const cateringMenu = [
   },
   {
     name: "Lemon Rice",
-    price: 1100,
+    price: 1300,
     quantity: "1 Padi",
     serves: "10 persons",
-    image: "/images/catering/lemon_rice.png",
+    image: "/images/catering/lemon-rice.webp",
     includes: [
       "Chutney",
       "Veg Sambar",
@@ -53,7 +53,7 @@ const cateringMenu = [
     price: 1000,
     quantity: "1 Padi",
     serves: "10 persons",
-    image: "/images/catering/curd-rice.png",
+    image: "/images/catering/curd-rice.webp",
     includes: [
       "Chutney",
       "Pickle",
@@ -65,7 +65,7 @@ const cateringMenu = [
     price: 1200,
     quantity: "1 Padi",
     serves: "10 persons",
-    image: "/images/catering/malli-rice.png",
+    image: "/images/catering/malli-rice.webp",
     includes: [
       "Chutney",
       "Veg Kuruma",
@@ -75,10 +75,10 @@ const cateringMenu = [
   },
   {
     name: "Tamarind Rice",
-    price: 1100,
+    price: 1200,
     quantity: "1 Padi",
     serves: "10 persons",
-    image: "/images/catering/tamarind-rice.png",
+    image: "/images/catering/tamarind-rice.webp",
     includes: [
       "Chutney",
       "Sundal",
@@ -90,7 +90,7 @@ const cateringMenu = [
     price: 1400,
     quantity: "1 Padi",
     serves: "10 persons",
-    image: "/images/catering/mushroom_biryani.png",
+    image: "/images/catering/mushroom-biryani.webp",
     includes: [
       "Chutney",
       "Veg Kuruma",
@@ -103,7 +103,7 @@ const cateringMenu = [
     price: 1300,
     quantity: "1 Padi",
     serves: "10 persons",
-    image: "/images/catering/veg_biryani.png",
+    image: "/images/catering/veg-biryani.webp",
     includes: [
       "Chutney",
       "Veg Kuruma",
@@ -111,21 +111,21 @@ const cateringMenu = [
       "10 Nos Leaf",
     ],
   },
-  {
-    name: "Veg Meals",
-    price: 1500,
-    quantity: "1 Padi",
-    serves: "10 persons",
-    image: "/images/catering/veg_meals.png",
-    includes: [
-      "10 Nos Leaf",
-      "Appalam",
-      "Curd",
-      "Kolambu",
-      "Rasam",
-      "Pickle",
-    ],
-  },
+  // {
+  //   name: "Veg Meals",
+  //   price: 1500,
+  //   quantity: "1 Padi",
+  //   serves: "10 persons",
+  //   image: "/images/catering/veg-meals.webp",
+  //   includes: [
+  //     "10 Nos Leaf",
+  //     "Appalam",
+  //     "Curd",
+  //     "Kolambu",
+  //     "Rasam",
+  //     "Pickle",
+  //   ],
+  // },
 ];
 
 export default function CateringPage() {

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Star } from "lucide-react";
 
 export default function HomeHero() {
   return (
@@ -28,10 +29,10 @@ export default function HomeHero() {
             and everyday dining.
           </p>
 
-          <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+          <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <Link
               href="/menu"
-              className="rounded-2xl bg-[#176b45] px-7 py-4 text-center text-[15px] font-bold text-white shadow-[0_10px_30px_rgba(23,107,69,0.16)] transition hover:bg-[#0e4f32]"
+              className="rounded-2xl bg-gradient-to-r from-[#176b45] to-[#278345] px-7 py-4 text-center text-[15px] font-bold text-white shadow-[0_10px_30px_rgba(23,107,69,0.16)] transition hover:from-[#176b45] hover:to-[#278345] sm:mr-3"
             >
               Explore Our Menu
             </Link>
@@ -43,6 +44,42 @@ export default function HomeHero() {
               Talk to CookOnStay
             </Link>
           </div>
+
+          {/* Zomato Order & Rating */}
+          <div className="mt-5 flex flex-col gap-4 sm:flex-row sm:items-start">
+            <a
+              href="https://www.zomato.com/madurai/cook-on-stay-periyar"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center justify-center gap-2 rounded-2xl bg-[#e23744] px-6 py-3.5 text-center text-sm font-extrabold text-white shadow-[0_8px_24px_rgba(226,55,68,0.18)] transition hover:bg-[#c92d39]"
+            >
+              Order on Zomato
+              <span aria-hidden="true">↗</span>
+            </a>
+
+          </div>
+
+          {/* Zomato rating for mobile screens */}
+          <a
+            href="https://link.zomato.com/xqzv/rshare?id=4853050830563969"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Cook On Stay Zomato rating: 4 stars from 8 delivery reviews. Open Zomato."
+            className="mt-5 flex items-center justify-between gap-4 rounded-2xl border border-[#eadfc9] bg-white px-4 py-3 shadow-sm transition hover:border-[#278345] lg:hidden"
+          >
+            <div className="min-w-0">
+              <p className="text-sm font-extrabold text-[#20271f]">
+                Cook On Stay
+              </p>
+              <p className="mt-1 text-sm text-[#73786d]">Periyar · South Indian</p>
+              <p className="mt-2 text-[11px] text-[#858579]">
+                8 Delivery Reviews · View on Zomato
+              </p>
+            </div>
+            <span className="inline-flex shrink-0 items-center gap-1 rounded-xl bg-[#278345] px-4 py-3 text-lg font-black text-white">
+              4 <Star size={17} fill="currentColor" />
+            </span>
+          </a>
 
           <div className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-4 text-sm text-[#69736d]">
             <div>
@@ -105,6 +142,29 @@ export default function HomeHero() {
                 ))}
               </div>
             </div>
+
+            <a
+              href="https://link.zomato.com/xqzv/rshare?id=4853050830563969"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Cook On Stay Zomato rating: 4 stars from 8 delivery reviews. Open Zomato."
+              className="mt-5 flex items-center justify-between gap-3 rounded-2xl border border-[#eadfc9] bg-white px-4 py-3 transition hover:border-[#278345]"
+            >
+              <div className="min-w-0">
+                <p className="text-sm font-extrabold text-[#20271f]">
+                  Zomato rating
+                </p>
+                <p className="mt-1 text-xs text-[#73786d]">
+                  Cook On Stay · Periyar
+                </p>
+                <p className="mt-1 text-[11px] text-[#858579]">
+                  8 Delivery Reviews
+                </p>
+              </div>
+              <span className="inline-flex shrink-0 items-center gap-1 rounded-xl bg-[#278345] px-4 py-3 text-lg font-black text-white">
+                4 <Star size={17} fill="currentColor" />
+              </span>
+            </a>
 
             <div className="mt-6 flex items-center justify-between">
               <span className="text-xs text-[#69736d]">

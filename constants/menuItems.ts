@@ -18,7 +18,7 @@ export const MENU_ITEMS: MenuItem[] = [
     name: "Idli",
     category: "Breakfast",
     price: 8,
-    image: "/images/menu/idli.webp",
+    image: "/images/menu/2-idly.webp",
     description:
       "Soft and fluffy steamed idlis, freshly prepared for a classic South Indian breakfast.",
     popular: true,
@@ -29,7 +29,7 @@ export const MENU_ITEMS: MenuItem[] = [
     name: "Ven Pongal",
     category: "Breakfast",
     price: 40,
-    image: "/images/menu/venpongal.webp",
+    image: "/images/menu/ven-pongal.webp",
     description:
       "Comforting ven pongal prepared with rice, moong dal, pepper, cumin and curry leaves.",
     popular: true,
@@ -50,7 +50,7 @@ export const MENU_ITEMS: MenuItem[] = [
     name: "Lemon Rice",
     category: "Rice Varieties",
     price: 40,
-    image: "/images/menu/lemonrice.png",
+    image: "/images/menu/lemon-rice.webp",
     description:
       "Bright and tangy lemon rice with traditional South Indian tempering.",
   },
@@ -60,7 +60,7 @@ export const MENU_ITEMS: MenuItem[] = [
     name: "Tomato Rice",
     category: "Rice Varieties",
     price: 40,
-    image: "/images/menu/Tomato_rice.webp",
+    image: "/images/menu/tomato-rice.webp",
     description:
       "Flavorful tomato rice prepared with ripe tomatoes and aromatic spices.",
     popular: true,
@@ -71,7 +71,7 @@ export const MENU_ITEMS: MenuItem[] = [
     name: "Tamarind Rice",
     category: "Rice Varieties",
     price: 40,
-    image: "/images/menu/tamarind_rice.webp",
+    image: "/images/menu/tamarind-rice.webp",
     description:
       "Traditional tamarind rice with a rich, tangy South Indian flavor.",
   },
@@ -81,7 +81,7 @@ export const MENU_ITEMS: MenuItem[] = [
     name: "Curd Rice",
     category: "Rice Varieties",
     price: 40,
-    image: "/images/menu/curdrice.png",
+    image: "/images/menu/curd-rice.webp",
     description:
       "Creamy curd rice finished with a simple traditional tempering.",
   },

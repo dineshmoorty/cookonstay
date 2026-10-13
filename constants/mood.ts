@@ -4,7 +4,7 @@ export const MOODS = [
     emoji: "😌",
     mood: "Relaxed Morning",
     dish: "Ven Pongal",
-    image: "/images/menu/venpongal.webp",
+    image: "/images/menu/ven-pongal.webp",
 
     story:
       "A comforting South Indian breakfast made with rice, moong dal, black pepper, cumin, curry leaves and ghee. Soft, aromatic and traditionally served hot with coconut chutney and sambar.",
@@ -34,7 +34,7 @@ export const MOODS = [
     emoji: "☀️",
     mood: "Light & Refreshing",
     dish: "Lemon Rice",
-    image: "/images/menu/lemon_rice.png",
+    image: "/images/menu/lemon-rice.webp",
 
     story:
       "Tangy lemon rice prepared with turmeric, mustard seeds, curry leaves and roasted peanuts. A colorful South Indian favorite enjoyed for its fresh citrus flavor.",
@@ -64,7 +64,7 @@ export const MOODS = [
     emoji: "🔥",
     mood: "Craving Bold Flavors",
     dish: "Tomato Rice",
-    image: "/images/menu/Tomato_rice.webp",
+    image: "/images/menu/tomato-rice.webp",
 
     story:
       "Rich tomato rice cooked with ripe tomatoes, onions and aromatic South Indian spices. A flavorful meal loved for its vibrant taste.",
@@ -93,7 +93,7 @@ export const MOODS = [
     emoji: "🥣",
     mood: "Simple Comfort",
     dish: "Curd Rice",
-    image: "/images/menu/curd-rice.png",
+    image: "/images/menu/curd-rice.webp",
 
     story:
       "Creamy curd rice prepared with fresh curd and a traditional tempering of mustard seeds, curry leaves and green chillies. A timeless South Indian classic.",
@@ -122,7 +122,7 @@ export const MOODS = [
     emoji: "🏡",
     mood: "Authentic South Indian",
     dish: "Tamarind Rice",
-    image: "/images/menu/tamarind_rice.webp",
+    image: "/images/menu/tamarind-rice.webp",
 
     story:
       "Traditional tamarind rice prepared with sesame oil, roasted peanuts and authentic spices. A timeless recipe enjoyed across South India.",
