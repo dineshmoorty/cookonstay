@@ -7,13 +7,13 @@ export const BUSINESS = {
   address: "106A, Panthadi 9th Street, Thavittusandhai, Madurai - 625001",
 
   phone: "+91 9488270932",
-  email: "storeskuberan@gmail.com",
+  email: "support@cookonstay.com",
   hours: "7:00 PM – 10:00 PM, Monday – Saturday",
   mapUrl:
     "https://www.google.com/maps/search/?api=1&query=106A%2C%20Panthadi%209th%20Street%2C%20Thavittusandhai%2C%20Madurai%20-%20625001",
 
   msme: "UDYAM-TN-12-0051633",
-  fssai: "22422577000137",
+  fssai: "22426577000421",
   linkedin: "https://www.linkedin.com/company/cookonstay",
   instagram: "https://www.instagram.com/cookonstay_madurai/",
   facebook: "https://www.facebook.com/profile.php?id=61589350733795",

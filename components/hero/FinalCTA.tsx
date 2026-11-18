@@ -1,3 +1,4 @@
+import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 
 export default function FinalCTA() {
@@ -34,21 +35,26 @@ export default function FinalCTA() {
             </div>
 
             {/* Actions */}
-            <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
+            <div className="flex w-full flex-col gap-3 sm:flex-row lg:w-auto lg:flex-col">
+
+              {/* Primary CTA */}
               <Link
-                href="/enquiry"
-                className="inline-flex min-w-[190px] items-center justify-center rounded-xl bg-[#f28c28] px-6 py-4 text-sm font-bold text-white transition hover:bg-[#d97416]"
+                href="/contact"
+                className="inline-flex min-h-[58px] min-w-[220px] items-center justify-center gap-3 rounded-2xl bg-[#E97817] px-7 py-4 text-sm font-extrabold !text-white shadow-[0_10px_25px_rgba(233,120,23,0.22)] transition-all duration-300 hover:-translate-y-1 hover:bg-[#D4660D] hover:shadow-[0_14px_30px_rgba(233,120,23,0.32)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#F28C28]"
               >
                 Make an Enquiry
-                <span className="ml-2">→</span>
+                <ArrowUpRight size={18} className="text-white" />
               </Link>
 
+              {/* Secondary CTA */}
               <Link
                 href="/menu"
-                className="inline-flex min-w-[190px] items-center justify-center rounded-xl border border-white/15 bg-white/10 px-6 py-4 text-sm font-bold text-white transition hover:bg-white/15"
+                className="inline-flex min-h-[58px] min-w-[220px] items-center justify-center gap-3 rounded-2xl border border-white/25 bg-white px-7 py-4 text-sm font-extrabold text-[#10452F] shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-white hover:bg-[#F1F5F0] hover:text-[#0B3826] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
               >
                 Explore Menu
+                <ArrowUpRight size={18} />
               </Link>
+
             </div>
 
           </div>

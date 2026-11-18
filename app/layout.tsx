@@ -1,29 +1,30 @@
 import type { Metadata } from "next";
 import "./globals.css";
-
-const siteUrl = "https://cookonstay.com";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
+  metadataBase: new URL(SITE_URL),
 
   title: {
-    default: "CookOnStay | Food & Catering",
+    default: "CookOnStay | Food & Catering in Madurai",
     template: "%s | CookOnStay",
   },
 
   description:
-    "CookOnStay provides everyday food, catering and practical food solutions for colleges, workplaces, events and group requirements.",
+    "Explore CookOnStay in Madurai for South Indian everyday food, catering packages and bulk food orders for colleges, workplaces and events.",
 
   applicationName: "CookOnStay",
 
   keywords: [
     "CookOnStay",
-    "food catering",
-    "college catering",
-    "campus food",
-    "bulk food",
-    "event catering",
-    "food solutions",
+    "food in Madurai",
+    "South Indian food Madurai",
+    "catering services Madurai",
+    "bulk food orders Madurai",
+    "college catering Madurai",
+    "office lunch Madurai",
   ],
 
   authors: [{ name: "CookOnStay" }],
@@ -37,11 +38,11 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: siteUrl,
+    url: SITE_URL,
     siteName: "CookOnStay",
-    title: "CookOnStay | Food & Catering",
+    title: "CookOnStay | Food & Catering in Madurai",
     description:
-      "Everyday food, catering and practical food solutions for colleges, workplaces, events and group requirements.",
+      "South Indian everyday food, catering packages and bulk food orders in Madurai.",
     images: [
       {
         url: "/images/og-image.webp",
@@ -54,9 +55,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "CookOnStay | Food & Catering",
+    title: "CookOnStay | Food & Catering in Madurai",
     description:
-      "Everyday food, catering and practical food solutions by CookOnStay.",
+      "South Indian everyday food, catering packages and bulk food orders in Madurai.",
     images: ["/images/og-image.webp"],
   },
 
@@ -85,7 +86,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en-IN">
-      <body>{children}</body>
+      <body>
+        {children}
+        {process.env.VERCEL === "1" ? (
+          <>
+            <Analytics />
+            <SpeedInsights />
+          </>
+        ) : null}
+      </body>
     </html>
   );
 }

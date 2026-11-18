@@ -30,7 +30,7 @@ const cateringTypes = [
 export default function CateringSection() {
   return (
     <section className="bg-white py-20 sm:py-24 lg:py-28">
-      <div className="mx-auto max-w-full px-5 sm:px-8 lg:px-10">
+      <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
 
         {/* Header */}
         <div className="grid gap-8 lg:grid-cols-[1fr_0.75fr] lg:items-end">
@@ -75,7 +75,7 @@ export default function CateringSection() {
               </p>
 
               <Link
-                href="/enquiry"
+                href="/contact"
                 className="mt-8 inline-flex items-center rounded-xl bg-[#f28c28] px-6 py-3.5 text-sm font-bold text-white transition hover:bg-[#d97416]"
               >
                 Discuss Your Requirement

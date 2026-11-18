@@ -39,3 +39,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+# Playwright
+/playwright-report/
+/test-results/
+/playwright/.cache/
+
+# Audit reports
+/audit-report.json
+
+# Local environment files
+.env*.local

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const highlights = [
   {
     value: "2022",
@@ -16,7 +18,7 @@ const highlights = [
 export default function BrandStory() {
   return (
     <section className="bg-[#f8f7f2] py-20 sm:py-24 lg:py-28">
-      <div className="mx-auto max-w-full px-5 sm:px-8 lg:px-10">
+      <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
 
         <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr]">
 
@@ -27,12 +29,13 @@ export default function BrandStory() {
             </span>
 
             {/* CookOnStay Stall Image */}
-            <div className="mt-6 overflow-hidden rounded-2xl border border-white/10">
-              <img
+            <div className="relative mt-6 aspect-[16/10] overflow-hidden rounded-2xl border border-white/10">
+              <Image
                 src="/images/cookonstay-stall.webp"
                 alt="CookOnStay street-food stall in Madurai"
-                className="h-auto w-full object-cover object-center sm:h-64 md:h-75 lg:h-100 lg:w-full"
-                loading="lazy"
+                fill
+                sizes="(max-width: 1024px) 100vw, 40vw"
+                className="object-cover object-center"
               />
             </div>
 

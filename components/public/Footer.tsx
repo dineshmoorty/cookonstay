@@ -1,12 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
 
+const legalLinks = [
+  { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "Terms & Conditions", href: "/terms-and-conditions" },
+  { label: "Refund Policy", href: "/refund-policy" },
+];
+
 const quickLinks = [
   { label: "Home", href: "/" },
   { label: "Menu", href: "/menu" },
   { label: "Catering", href: "/catering" },
-  // { label: "About", href: "/about" },
-  { label: "Enquiry", href: "/enquiry" },
+  { label: "About", href: "/about" },
+  { label: "Enquiry", href: "/contact" },
 ];
 
 /*
@@ -130,7 +136,7 @@ export default function Footer() {
         {/* =================================================
             MAIN FOOTER
         ================================================= */}
-        <div className="grid gap-12 lg:grid-cols-[1.35fr_0.7fr_0.9fr]">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.25fr_0.7fr_0.8fr_0.9fr]">
 
           {/* =================================================
               BRAND
@@ -281,6 +287,20 @@ export default function Footer() {
 
 
           {/* =================================================
+              LEGAL
+          ================================================= */}
+          <div>
+            <h3 className="text-sm font-bold uppercase tracking-[0.16em]">Legal</h3>
+            <nav className="mt-5 flex flex-col items-start gap-3" aria-label="Legal navigation">
+              {legalLinks.map((link) => (
+                <Link key={link.href} href={link.href} className="text-sm text-white/55 transition hover:translate-x-1 hover:text-white">
+                  {link.label}
+                </Link>
+              ))}
+            </nav>
+          </div>
+
+          {/* =================================================
               CONTACT
           ================================================= */}
           <div>
@@ -317,7 +337,7 @@ export default function Footer() {
                 </p>
 
                 <Link
-                  href="/enquiry"
+                  href="/contact"
                   className="mt-1 inline-block text-sm font-semibold text-[#f28c28] transition hover:text-[#ffad5b]"
                 >
                   Start an enquiry →
@@ -398,7 +418,7 @@ export default function Footer() {
 
 
             <Link
-              href="/enquiry"
+              href="/contact"
               className="inline-flex w-fit items-center rounded-xl bg-[#f28c28] px-5 py-3 text-xs font-bold text-white transition hover:bg-[#d97416]"
             >
               Make an Enquiry

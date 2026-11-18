@@ -28,7 +28,7 @@ const reasons = [
 export default function WhyCookOnStay() {
   return (
     <section className="bg-[#f8f7f2] py-20 sm:py-24 lg:py-28">
-      <div className="mx-auto max-w-full px-5 sm:px-8 lg:px-10">
+      <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
 
         {/* Top */}
         <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-end">
