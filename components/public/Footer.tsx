@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { BUSINESS } from "@/constants/business";
 
 const legalLinks = [
   { label: "Privacy Policy", href: "/privacy-policy" },
@@ -30,6 +31,7 @@ const socialLinks = {
  * before publishing the website.
  */
 const businessInfo = {
+  legalName: BUSINESS.legalName,
   udyam: "UDYAM-TN-12-0051633",
   fssai: "22426577000421",
 };
@@ -357,6 +359,16 @@ export default function Footer() {
 
 
                 <div className="mt-4 space-y-3">
+
+                  {/* LEGAL NAME */}
+                  <div className="rounded-xl border border-white/10 bg-white/5 px-4 py-3">
+                    <p className="text-[10px] font-semibold uppercase tracking-[0.14em] text-white/35">
+                      Legal Name
+                    </p>
+                    <p className="mt-1 text-xs font-semibold leading-5 text-white/80">
+                      {businessInfo.legalName}
+                    </p>
+                  </div>
 
                   {/* UDYAM */}
                   <div className="rounded-xl border border-white/10 bg-white/5 px-4 py-3">

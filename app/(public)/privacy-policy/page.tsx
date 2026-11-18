@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import LegalPage from "@/components/public/LegalPage";
+import { BUSINESS } from "@/constants/business";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
@@ -16,6 +17,7 @@ export default function Page() {
       updated="18 November 2026"
       sections={[
 
+{ title: "Business identity and data contact", paragraphs: ["This website is operated under the CookOnStay brand. The legal name of the proprietor is " + BUSINESS.legalName + ". For privacy-related requests, you can contact us at support@cookonstay.com." ] },
 { title: "Scope and current website use", paragraphs: ["This policy applies to the CookOnStay public website and enquiries submitted through its contact form. The current form asks for your name, phone number, optional email address, enquiry type, optional college or organisation, and message. We use these details to understand and respond to the enquiry.", "The website enquiry form is processed through Formspree, a third-party form service. Information submitted through that form may be processed by that provider to transmit the enquiry to CookOnStay. Please review the provider's own privacy information for its handling of submitted data."] },
 { title: "Information for the future ordering application", paragraphs: ["CookOnStay is developing a dedicated food-ordering application. The following describes information categories that may be required if and when those features become available; it does not mean that the application is currently live or that these categories are currently collected by this website."], bullets: ["Account and contact details, such as name, mobile number and email address.", "Delivery details, such as delivery address and order instructions.", "Order information, including items selected, order status and order history.", "Payment references and transaction status supplied by a payment service provider. CookOnStay does not intend to request or store full card numbers, CVV or UPI PINs.", "Location information only if a future feature requests it and you grant the relevant device permission."] },
 { title: "How information may be used", bullets: ["Respond to website enquiries and customer-support requests.", "Coordinate catering or other services requested by you.", "If ordering becomes available, process and communicate about orders, delivery and payment status.", "Maintain service records, prevent misuse, resolve disputes and meet applicable legal obligations."] },

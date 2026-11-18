@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import LegalPage from "@/components/public/LegalPage";
+import { BUSINESS } from "@/constants/business";
 
 export const metadata: Metadata = {
   title: "Refund & Cancellation Policy",
@@ -15,6 +16,7 @@ export default function Page() {
       intro="This policy currently covers website enquiries and service arrangements made directly with CookOnStay. App-based ordering and payment rules will be added before the ordering application is launched."
       updated="18 November 2026"
       sections={[
+{ title: "Business identity", paragraphs: ["CookOnStay is the trading brand. The legal name of the proprietor is " + BUSINESS.legalName + ". For refund or payment-related assistance, contact support@cookonstay.com."] },
 
 { title: "Current website enquiries", paragraphs: ["Submitting the website enquiry form does not create a paid order and does not itself require a refund. If you have paid CookOnStay against a separately confirmed quotation or invoice, the cancellation and refund terms communicated for that specific engagement will apply, subject to applicable law."] },
 { title: "Future application orders", paragraphs: ["CookOnStay's dedicated ordering application is under development. This page does not announce that in-app ordering or in-app refunds are currently available. Before the app launches, this policy will be updated with the actual cancellation window, eligibility rules, payment methods, refund timelines and support process applicable to app orders."] },

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import LegalPage from "@/components/public/LegalPage";
+import { BUSINESS } from "@/constants/business";
 
 export const metadata: Metadata = {
   title: "Terms & Conditions",
@@ -16,7 +17,7 @@ export default function Page() {
       updated="18 November 2026"
       sections={[
 
-{ title: "About CookOnStay", paragraphs: ["CookOnStay is a sole proprietorship operating from Madurai, Tamil Nadu. The website provides information about food, catering and related services and allows visitors to contact us. FSSAI licence and Udyam registration details are displayed above for business identification."] },
+{ title: "About CookOnStay", paragraphs: ["CookOnStay is a sole proprietorship operating from Madurai, Tamil Nadu. The legal name of the proprietor is " + BUSINESS.legalName + ". The website provides information about food, catering and related services and allows visitors to contact us. FSSAI licence and Udyam registration details are displayed on this website for business identification."] },
 { title: "Website information", paragraphs: ["We take reasonable care to keep descriptions, menus, photographs, prices and service information useful and current. Items, ingredients, availability, prices and service areas may change. Website content is informational and does not by itself confirm an order, booking or service engagement."] },
 { title: "Enquiries and bookings", bullets: ["Submitting an enquiry is a request for information or a quotation, not an automatic confirmation of a booking.", "A catering or bulk-service request is confirmed only after CookOnStay communicates acceptance and any applicable details are agreed.", "You are responsible for providing accurate contact details, dates, quantities, location and other information needed to assess your request.", "Please tell us about relevant dietary requirements or allergies before confirming an order. We can discuss requests, but cannot promise an allergen-free environment unless expressly confirmed in writing."] },
 { title: "Future online ordering", paragraphs: ["CookOnStay is developing its own food-ordering application. Ordering, account, delivery, payment, cancellation and order-tracking features are not represented as available through this website unless and until they are expressly enabled and announced. Additional app-specific terms will be published before those features go live."] },
